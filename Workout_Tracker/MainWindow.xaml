@@ -1,0 +1,22 @@
+﻿<Window x:Class="Workout_Tracker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Workout_Tracker"
+        mc:Ignorable="d"
+        Title="Workout Tracker v0.0.0" Height="600" Width="800">
+    <Grid>
+        <ListBox Width="100" Margin="20,52,0,115" HorizontalAlignment="Left"/>
+        <ListBox Width="150" Margin="140,52,0,115" HorizontalAlignment="Left"/>
+        <TextBlock HorizontalAlignment="Left" Margin="58,31,0,0" TextWrapping="Wrap" Text="Date" VerticalAlignment="Top" RenderTransformOrigin="-0.073,1.014"/>
+        <TextBlock HorizontalAlignment="Left" Margin="192,31,0,0" TextWrapping="Wrap" Text="Exercises" VerticalAlignment="Top" RenderTransformOrigin="-0.223,1.092"/>
+        <DatePicker HorizontalAlignment="Center" Margin="0,52,0,0" VerticalAlignment="Top" Width="180"/>
+        <Button Content="Record A New Workout" HorizontalAlignment="Center" Margin="0,81,0,0" VerticalAlignment="Top" Width="180"/>
+        <Button Content="Delete Selected Workout" HorizontalAlignment="Center" Margin="0,106,0,0" VerticalAlignment="Top" Width="180"/>
+        <Button Content="Add New Exercise" HorizontalAlignment="Left" Margin="544,409,0,0" VerticalAlignment="Top" Width="180"/>
+        <Button Content="Delete Selected Exercise" HorizontalAlignment="Left" Margin="544,434,0,0" VerticalAlignment="Top" Width="180"/>
+        <ComboBox Name="TypeOfWorkoutSelector" HorizontalAlignment="Left" Margin="534,54,0,0" VerticalAlignment="Top" Width="200" IsEditable="True" IsReadOnly="True" Text="Select Workout Type"/>
+
+    </Grid>
+</Window>
